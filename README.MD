@@ -62,3 +62,9 @@ Además, se utilizó CSS Grid y Bootstrap para organizar y adaptar los diferente
 Control de versiones
 
 El proyecto utiliza Git para controlar las diferentes versiones y registrar los cambios realizados durante el desarrollo.
+
+
+URL del sitio: https://aimazingc3.github.io/Sitio-web-responsive-de-la-marca-AIMAZING/
+
+GitHub: https://github.com/AIMAZINGc3/Sitio-web-responsive-de-la-marca-AIMAZING
+
