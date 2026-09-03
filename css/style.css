@@ -1,0 +1,1427 @@
+/* ==============================
+   CONFIGURACIÓN GENERAL
+============================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+   font-family: Arial, Helvetica, sans-serif;
+
+    background-color: #f5f3ef;
+
+    color: #111;
+    line-height: 1.5;
+    overflow-x: hidden;
+}
+
+a {
+    color: inherit;
+
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+
+/* ==============================
+   BARRA SUPERIOR
+============================== */
+
+.top-bar  {
+  min-height: 36px;
+
+  background-color: #050505;
+
+  color: #ffffff;
+
+  display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+     justify-content: center;
+
+     gap: 5px;
+     padding: 8px 10px;
+
+     font-size: 10px;
+
+     text-align: center;
+
+  
+  
+
+}
+
+.top-bar p {
+    margin: 0;
+
+}
+
+/* ==============================
+   PORTADA
+============================== */
+
+.hero {
+
+    height: 65vh;
+
+    position: relative;
+    
+    display: flex;
+
+    align-items: center;
+
+    justify-content: flex-start;
+
+    padding: 40px 20px;
+
+    text-align: center;
+
+
+
+    background-image:
+         linear-gradient(
+            90deg,
+            rgba(0, 0, 0, 0.72),
+            rgba(0, 0, 0, 0.20)
+        ),
+        url("../img/fotoportada.jpg");
+
+        background-size: cover;
+
+        background-position: center;
+
+        background-repeat: no-repeat;
+
+   
+}
+
+
+
+
+/* TEXTO DE PORTADA */
+
+.hero-content {
+
+    width: 100%;
+
+    max-width: 700px;
+
+    color: #ffffff;
+
+}
+
+.hero-content h2 {
+
+    font-family: Georgia, serif;
+
+    font-size: clamp(1.8rem, 9vw, 4rem);
+
+    font-weight: 400;
+
+    line-height: 1.1;
+
+}
+
+.hero-content p {
+
+   max-width: 600px;
+
+   margin: 25px auto 0;
+
+   font-size: clamp(0.9rem, 4vw, 1.25rem);
+
+
+}
+
+
+/* BOTONES */
+
+.hero-buttons {
+
+    width: 100%;
+
+    display: flex;
+
+   flex-direction: column;
+    
+    gap: 12px;
+
+    margin-top: 30px;
+
+}
+
+.btn {
+
+    width: 100%;
+        display: block;
+
+
+    padding: 13px 20px;
+
+    font-size: 0.9rem;
+
+    text-align: center;
+
+    font-weight: 600;
+
+    color: #ffffff;
+
+    border: 1px solid #05050591;
+
+    transition:
+    background-color 0.3s ease,
+    color 0.3s ease,
+    transform 0.3s ease,
+    border-color 0.3s ease;
+        
+
+
+        
+}
+
+.btn:hover {
+
+    border-color: #ffffff;
+
+    transform: translateY(-2px);
+
+
+
+
+}
+
+.btn:focus {
+
+    outline: 0.5px solid #ffffff;
+
+        transform: translateY(-3px);
+
+}
+.btn:active {
+
+    transform: translateY(0);
+}
+
+
+
+/* ==============================
+   BENEFICIOS
+============================== */
+
+.benefits {
+
+    display: grid;
+
+    grid-template-columns: 1fr;
+
+    gap: 25px;
+
+    padding: 35px 20px;
+
+    background-color: #f5f3ef;
+
+    border-bottom: 1px solid #ddd;
+
+    text-align: center;
+
+}
+
+.benefits article h3 {
+
+    font-size: 11px;
+
+    font-weight: 500;
+
+}
+
+.benefits article p {
+
+    margin-top: 5px;
+
+    font-size: 10px;
+
+    color: #555;
+
+}
+
+
+/* ==============================
+   COLECCIÓN
+============================== */
+
+.collection {
+
+    width: 100%;
+
+    display: grid;
+
+    grid-template-columns: 1fr;
+
+    gap: 35px;
+
+    padding: 40px 20px;
+
+    margin: 0 auto;
+
+}
+
+.collection-text {
+    text-align: center;
+}
+
+.collection-text h2 {
+
+    font-family: Georgia, serif;
+
+    font-size: clamp(2rem, 10vw, 3rem);
+
+    font-weight: 400;
+
+    line-height: 1.1;
+
+}
+
+.collection-text p {
+
+    margin-top: 15px;
+
+    font-size: 1rem;
+
+    line-height: 1.5;
+
+}
+
+.collection-text a {
+
+    display: inline-block;
+
+    margin-top: 25px;
+
+    font-size: 1rem;
+
+    border-bottom: 1px solid #111;
+
+    padding-bottom: 5px;
+
+    transition:
+        opacity 0.3s ease,
+        transform 0.3s ease;
+
+}
+
+.collection-text a:hover {
+
+        opacity: 0.5;
+
+        transform: translateY(5px);
+
+
+}
+
+.collection-text a:focus {
+
+    outline: 2px solid #111;
+
+    outline-offset: 4px;
+
+}
+
+.collection-text a:active {
+
+    opacity: 0.3;
+
+}
+
+/* ==============================
+   PRODUCTOS - RESPONSIVE
+   ============================== */
+
+.collection-products {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+.product {
+    width: 100%;
+    background-color: #ffffff;
+    overflow: hidden;
+}
+
+.product a {
+    display: block;
+}
+
+.product-image {
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+}
+
+.product-image img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+    object-position: center;
+}
+
+.product h3 {
+    padding: 15px;
+    font-family: Georgia, serif;
+    font-size: 15px;
+    font-weight: 400;
+    letter-spacing: 2px;
+    text-align: center;
+}
+
+
+/* TABLET */
+
+@media (min-width: 768px) {
+
+    .collection-products {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 20px;
+    }
+
+    .product-image {
+        height: 350px;
+    }
+
+}
+/* ==============================
+   COLLECTION - TABLET
+   ============================== */
+
+@media (min-width: 768px) {
+
+    .collection {
+        padding: 60px 40px;
+        gap: 45px;
+    }
+
+    .collection-text {
+        text-align: center;
+    }
+
+    .collection-products {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 20px;
+    }
+
+}
+
+
+/* ==============================
+   COLLECTION - DESKTOP
+   ============================== */
+
+@media (min-width: 1024px) {
+
+    .collection {
+        max-width: 1400px;
+        padding: 70px 60px;
+        gap: 55px;
+    }
+
+    .collection-products {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 25px;
+    }
+
+    .product-image {
+        height: 450px;
+    }
+
+}
+
+
+/* DESKTOP */
+
+@media (min-width: 1024px) {
+
+    .collection-products {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 25px;
+    }
+
+    .product-image {
+        height: 450px;
+    }
+
+}
+
+
+.footer {
+    background-color: #050505;
+
+    color: #ffffff;
+
+    text-align: center;
+
+    padding: 25px 15px;
+
+    font-size: 10px;
+
+    letter-spacing: 1px;
+}
+
+.footer p {
+    margin: 0;
+}
+
+
+
+/* =========================================
+   SOBRE NOSOTROS
+========================================= */
+
+.about-section {
+    width: 100%;
+
+    max-width: 900px;
+
+    margin: 0 auto;
+
+    padding: 60px 20px;
+
+    text-align: center;
+}
+
+.about-content h2 {
+    font-family: Georgia, serif;
+
+    font-size: clamp(2rem, 8vw, 3rem);
+
+    font-weight: 400;
+}
+
+.about-content p {
+    max-width: 700px;
+
+    margin: 20px auto 0;
+
+    font-size: 1rem;
+}
+/* =========================================
+   NAVBAR BOOTSTRAP - AIMAZING
+========================================= */
+
+.navbar-aimazing {
+
+    background-color: #f5f3ef;
+
+    border-bottom: 1px solid #dddddd;
+
+    padding: 15px;
+
+}
+
+
+/* =========================================
+   CONTENEDOR
+========================================= */
+
+.navbar-aimazing .container-fluid {
+
+    width: 100%;
+
+    padding: 0;
+
+}
+
+
+/* =========================================
+   LOGO
+========================================= */
+
+.navbar-aimazing .navbar-brand {
+
+    margin: 0;
+
+    padding: 0;
+
+    color: #111;
+
+}
+
+
+.navbar-aimazing .logo h1 {
+
+    margin: 0;
+
+    font-family: Georgia, serif;
+
+    font-size: clamp(22px, 6vw, 30px);
+
+    font-weight: 400;
+
+    letter-spacing: 5px;
+
+    line-height: 1;
+
+}
+
+
+.navbar-aimazing .logo span {
+
+    display: block;
+
+    margin-top: 5px;
+
+    font-size: 9px;
+
+    letter-spacing: 4px;
+
+    text-align: center;
+
+}
+
+
+/* =========================================
+   HAMBURGUESA
+========================================= */
+
+.navbar-aimazing .navbar-toggler {
+
+    border: 1px solid #111;
+
+    border-radius: 0;
+
+    padding: 8px;
+
+}
+
+
+.navbar-aimazing .navbar-toggler:focus {
+
+    box-shadow: 0 0 0 2px #111;
+
+}
+
+
+/* =========================================
+   LINKS
+========================================= */
+
+.navbar-aimazing .nav-link {
+
+    color: #111;
+
+    font-size: 12px;
+
+    font-weight: 500;
+
+    padding: 8px 10px;
+
+    transition:
+        color 0.3s ease,
+        opacity 0.3s ease,
+        transform 0.3s ease;
+
+}
+
+
+.navbar-aimazing .nav-link:hover {
+
+    color: #666;
+
+    opacity: 0.7;
+
+    transform: translateY(-2px);
+
+}
+
+
+.navbar-aimazing .nav-link:focus {
+
+    color: #111;
+
+    outline: 2px solid #111;
+
+    outline-offset: 3px;
+
+    border-radius: 4px;
+
+}
+
+
+.navbar-aimazing .nav-link:active {
+
+    opacity: 0.4;
+
+    transform: translateY(0);
+
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 767px) {
+
+    .navbar-aimazing {
+
+        padding: 20px 15px;
+
+    }
+
+
+    .navbar-aimazing .container-fluid {
+
+        display: flex;
+
+        flex-wrap: wrap;
+
+        align-items: center;
+
+        justify-content: space-between;
+
+    }
+
+
+    .navbar-aimazing .navbar-collapse {
+
+        width: 100%;
+
+        margin-top: 20px;
+
+        text-align: center;
+
+    }
+
+
+    .navbar-aimazing .navbar-nav {
+
+        align-items: center;
+
+    }
+
+
+    .navbar-aimazing .navbar-actions {
+
+        display: flex;
+
+        flex-direction: column;
+
+        align-items: center;
+
+        margin-top: 10px;
+
+    }
+
+}
+
+/* =========================================
+   TABLET
+   768px
+========================================= */
+@media (min-width: 768px) {
+
+    .navbar-aimazing {
+        padding: 25px 30px;
+    }
+
+    .navbar-aimazing .container-fluid {
+        display: grid;
+        grid-template-columns: 1fr auto 1fr;
+        align-items: center;
+        gap: 25px;
+    }
+
+    .navbar-aimazing .navbar-brand {
+        grid-column: 2;
+        grid-row: 1;
+    }
+
+    .navbar-aimazing .navbar-collapse {
+        display: contents !important;
+    }
+
+    .navbar-aimazing .navbar-nav {
+        grid-column: 1;
+        grid-row: 1;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .navbar-aimazing .navbar-actions {
+        grid-column: 3;
+        grid-row: 1;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: center;
+        gap: 5px;
+    }
+
+    .navbar-aimazing .navbar-toggler {
+        display: none;
+    }
+}
+
+
+/* =========================================
+   TABLET
+   768px
+========================================= */
+
+@media (min-width: 768px) {
+
+    .navbar-aimazing {
+
+        padding: 25px 30px;
+
+    }
+
+
+    .navbar-aimazing .container-fluid {
+
+        display: grid;
+
+        grid-template-columns: 1fr auto 1fr;
+
+        align-items: center;
+
+        gap: 25px;
+
+    }
+
+
+    /* LOGO CENTRADO */
+
+    .navbar-aimazing .navbar-brand {
+
+        grid-column: 2;
+
+        grid-row: 1;
+
+    }
+
+
+    /* MENÚ IZQUIERDO */
+
+    .navbar-aimazing .navbar-collapse {
+
+        display: contents !important;
+
+    }
+
+
+    .navbar-aimazing .navbar-nav {
+
+        grid-column: 1;
+
+        grid-row: 1;
+
+        display: flex;
+
+        flex-direction: row;
+
+        justify-content: flex-start;
+
+        align-items: center;
+
+        gap: 10px;
+
+    }
+
+
+    /* ACCIONES DERECHA */
+
+    .navbar-aimazing .navbar-actions {
+
+        grid-column: 3;
+
+        grid-row: 1;
+
+        display: flex;
+
+        flex-direction: row;
+
+        justify-content: flex-end;
+
+        align-items: center;
+
+        gap: 5px;
+
+    }
+
+    
+    
+
+
+    /* OCULTAR HAMBURGUESA */
+
+    .navbar-aimazing .navbar-toggler {
+
+        display: none;
+
+    }
+
+    .hero {
+        min-height: 65vh;
+
+        justify-content: flex-start;
+
+        text-align: left;
+
+        padding: 60px 7%;
+    }
+
+    .hero-content p {
+        margin-left: 0;
+    }
+
+    .hero-buttons {
+        width: auto;
+
+        flex-direction: row;
+
+        align-items: center;
+    }
+
+    .btn {
+        width: auto;
+
+        min-width: 130px;
+    }
+
+
+    /* BENEFICIOS */
+
+    .benefits {
+        grid-template-columns: repeat(2, 1fr);
+
+        padding: 35px 30px;
+    }
+
+
+.collection {
+
+    width: 100%;
+
+    display: grid;
+
+    grid-template-columns: 1fr;
+
+    gap: 35px;
+
+    padding: 40px 20px;
+
+    margin: 0 auto;
+
+}
+
+.collection-text {
+    text-align: center;
+}
+
+.collection-text h2 {
+
+    font-family: Georgia, serif;
+
+    font-size: clamp(2rem, 10vw, 3rem);
+
+    font-weight: 400;
+
+    line-height: 1.1;
+
+}
+
+.collection-text p {
+
+    margin-top: 15px;
+
+    font-size: 1rem;
+
+    line-height: 1.5;
+
+}
+
+
+}
+
+
+
+
+
+
+
+
+
+/* =========================================
+   DESKTOP
+   1024px
+========================================= */
+
+@media (min-width: 1024px) {
+
+    .navbar-aimazing {
+
+        padding: 25px 50px;
+
+    }
+
+
+    .navbar-aimazing .container-fluid {
+
+        max-width: 1400px;
+
+        margin: 0 auto;
+
+        gap: 30px;
+
+    }
+
+
+    .navbar-aimazing .navbar-nav {
+
+        gap: 15px;
+
+    }
+
+
+    .navbar-aimazing .navbar-actions {
+
+        gap: 10px;
+
+    }
+
+
+    .navbar-aimazing .nav-link {
+
+        font-size: 13px;
+
+    }
+        /* HERO */
+
+    .hero {
+        min-height: 70vh;
+
+        padding: 60px 8%;
+
+        text-align: left;
+    }
+
+
+    /* BENEFICIOS */
+
+    .benefits {
+        grid-template-columns: repeat(4, 1fr);
+
+        padding: 25px 70px;
+    }
+
+
+
+}
+
+/* =========================================
+   CAROUSEL AIMAZING
+========================================= */
+
+.carousel-aimazing {
+    width: 100%;
+
+    overflow: hidden;
+}
+
+
+/* IMÁGENES */
+
+.carousel-aimazing .carousel-item img {
+    width: 100%;
+
+    height: 300px;
+
+    object-fit: cover;
+
+    object-position: center;
+
+    display: block;
+}
+
+
+/* INDICADORES */
+
+.carousel-aimazing .carousel-indicators {
+    margin-bottom: 15px;
+}
+
+
+.carousel-aimazing .carousel-indicators button {
+    width: 8px;
+
+    height: 8px;
+
+    border-radius: 50%;
+
+    transition:
+        transform 0.3s ease,
+        opacity 0.3s ease;
+}
+
+
+.carousel-aimazing .carousel-indicators button:hover {
+    transform: scale(1.3);
+}
+
+
+/* CONTROLES */
+
+.carousel-aimazing .carousel-control-prev,
+.carousel-aimazing .carousel-control-next {
+    transition:
+        opacity 0.3s ease,
+        transform 0.3s ease;
+}
+
+
+.carousel-aimazing .carousel-control-prev:hover {
+    transform: translateX(-5px);
+}
+
+
+.carousel-aimazing .carousel-control-next:hover {
+    transform: translateX(5px);
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (min-width: 768px) {
+
+    .carousel-aimazing .carousel-item img {
+        height: 400px;
+    }
+
+}
+
+
+/* =========================================
+   DESKTOP
+========================================= */
+
+@media (min-width: 1024px) {
+
+    .carousel-aimazing .carousel-item img {
+        height: 500px;
+    }
+
+}
+
+/* =========================================
+   CARDS BOOTSTRAP - AIMAZING
+========================================= */
+/* ==============================
+   PRODUCTOS BOOTSTRAP
+   ============================== */
+
+.bootstrap-products {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+.product-card {
+    width: 100%;
+    border: none;
+    border-radius: 0;
+    background: #ffffff;
+    overflow: hidden;
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.product-card .card-img-top {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 0;
+}
+
+/* HOVER DE LA CARD */
+
+.product-card:hover {
+    transform: translateY(-5px);
+
+    box-shadow:
+        0 10px 25px rgba(0, 0, 0, 0.12);
+}
+
+
+/* FOCUS */
+
+.product-card:focus-within {
+    outline: 2px solid #111;
+
+    outline-offset: 4px;
+}
+
+
+/* ACTIVE */
+
+.product-card:active {
+    transform: translateY(-2px);
+}
+
+
+/* =========================================
+   IMAGEN
+========================================= */
+
+.product-card .card-img-top {
+    width: 100%;
+
+    height: 220px;
+
+    object-fit: cover;
+
+    object-position: center;
+
+    border-radius: 0;
+
+    transition:
+        transform 0.5s ease;
+}
+
+
+.product-card:hover .card-img-top {
+    transform: scale(1.03);
+}
+
+
+/* =========================================
+   CONTENIDO
+========================================= */
+
+.product-card .card-body {
+    padding: 18px;
+}
+
+
+.product-card .card-title {
+    margin: 0;
+
+    font-family: Georgia, serif;
+
+    font-size: 1.1rem;
+
+    font-weight: 400;
+
+    letter-spacing: 1px;
+}
+
+
+.product-card .card-text {
+    margin-top: 8px;
+
+    margin-bottom: 10px;
+
+    font-size: 0.85rem;
+
+    color: #555;
+}
+
+
+/* =========================================
+   PRECIO
+========================================= */
+
+.product-price {
+    margin: 0 0 15px;
+
+    font-size: 0.95rem;
+
+    font-weight: 600;
+}
+
+
+/* =========================================
+   BOTÓN
+========================================= */
+
+.product-btn {
+    width: 100%;
+
+    display: block;
+
+    padding: 11px 15px;
+
+    background-color: #050505;
+
+    color: #ffffff;
+
+    border: 1px solid #050505;
+
+    border-radius: 0;
+
+    font-size: 0.8rem;
+
+    font-weight: 600;
+
+    transition:
+        background-color 0.3s ease,
+        color 0.3s ease,
+        transform 0.3s ease,
+        border-color 0.3s ease;
+}
+
+
+/* HOVER */
+
+.product-btn:hover {
+    background-color: #ffffff;
+
+    color: #050505;
+
+    border-color: #050505;
+
+    transform: translateY(-2px);
+}
+
+
+/* FOCUS */
+
+.product-btn:focus {
+    background-color: #050505;
+
+    color: #ffffff;
+
+    outline: 2px solid #111;
+
+    outline-offset: 4px;
+}
+
+
+/* ACTIVE */
+
+.product-btn:active {
+    background-color: #111;
+    color: #ffffff;
+    transform: translateY(0);
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (min-width: 768px) {
+
+    .bootstrap-products {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+
+        gap: 20px;
+    }
+
+
+    .product-card .card-img-top {
+        height: 300px;
+    }
+
+}
+
+
+/* =========================================
+   DESKTOP
+========================================= */
+
+@media (min-width: 1024px) {
+
+    .bootstrap-products {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+
+        gap: 25px;
+    }
+
+
+    .product-card .card-img-top {
+        height: 350px;
+    }
+
+}
+
+/* =========================================
+   BOTÓN SOBRE NOSOTROS
+========================================= */
+
+.about-button {
+
+    display: inline-block;
+
+    margin-top: 30px;
+
+    padding: 12px 25px;
+
+    background-color: #050505;
+
+    color: #ffffff;
+
+    border: 1px solid #050505;
+
+    text-decoration: none;
+
+    font-size: 0.85rem;
+
+    font-weight: 600;
+
+    transition:
+        background-color 0.3s ease,
+        color 0.3s ease,
+        transform 0.3s ease;
+
+}
+
+
+.about-button:hover {
+
+    background-color: #ffffff;
+
+    color: #050505;
+
+    transform: translateY(-3px);
+
+}
+
+
+.about-button:focus {
+
+    outline: 2px solid #111;
+
+    outline-offset: 4px;
+
+}
+
+
+.about-button:active {
+
+    transform: translateY(0);
+
+    opacity: 0.6;
+
+}
