@@ -1,0 +1,11 @@
+@use "../utilities/variables" as *;
+
+h1,
+h2,
+h3 {
+    font-family: $fuente-titulos;
+}
+
+p {
+    font-family: $fuente-principal;
+}

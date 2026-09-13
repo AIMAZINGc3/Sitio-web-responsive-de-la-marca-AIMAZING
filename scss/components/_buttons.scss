@@ -1,0 +1,78 @@
+@use "../utilities/variables" as *;
+@use "../utilities/mixins" as *;
+
+
+// ==============================
+// BOTONES DEL HERO
+// ==============================
+
+.hero-buttons {
+
+    .btn {
+        width: 100%;
+
+        display: block;
+
+        padding: 13px 20px;
+
+        background-color: transparent;
+        color: $color-blanco;
+
+        border: 1px solid rgba(255, 255, 255, 0.6);
+        border-radius: 0;
+
+        font-family: $fuente-principal;
+        font-size: 0.9rem;
+        font-weight: 600;
+
+        text-align: center;
+
+        transition:
+            background-color $transicion-rapida,
+            color $transicion-rapida,
+            border-color $transicion-rapida,
+            transform $transicion-rapida;
+
+
+        &:hover {
+            background-color: $color-blanco;
+            color: $color-negro;
+
+            border-color: $color-blanco;
+
+            transform: translateY(-2px);
+        }
+
+
+        &:focus {
+            color: $color-blanco;
+
+            outline: 0.5px solid $color-blanco;
+            outline-offset: 3px;
+
+            transform: translateY(-3px);
+        }
+
+
+        &:active {
+            transform: translateY(0);
+
+            opacity: 0.7;
+        }
+    }
+}
+
+
+// ==============================
+// TABLET Y ESCRITORIO
+// ==============================
+
+@include tablet {
+
+    .hero-buttons {
+
+        .btn {
+            width: 180px;
+        }
+    }
+}
