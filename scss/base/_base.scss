@@ -1,4 +1,7 @@
+// RESET Y ESTILOS BASE
 @use "../utilities/variables" as *;
+
+// RESET
 
 * {
     margin: 0;
@@ -6,9 +9,13 @@
     box-sizing: border-box;
 }
 
+// HTML
+
 html {
     scroll-behavior: smooth;
 }
+
+// BODY
 
 body {
     font-family: $fuente-principal;
@@ -17,6 +24,8 @@ body {
     line-height: 1.5;
     overflow-x: hidden;
 }
+
+// ELEMENTOS GENERALES
 
 a {
     color: inherit;

@@ -1,14 +1,15 @@
 @use "../utilities/variables" as *;
+@use "../utilities/mixins" as *;
 
-// ==============================
+
 // CAROUSEL
-// ==============================
 
 .carousel-aimazing {
     width: 100%;
     overflow: hidden;
 
     // IMAGEN
+
     .carousel-item {
         width: 100%;
         height: 100px;
@@ -23,6 +24,7 @@
     }
 
     // INDICADORES
+
     .carousel-indicators {
         margin-bottom: 15px;
 
@@ -30,6 +32,7 @@
             width: 8px;
             height: 8px;
             border-radius: 50%;
+
             transition: transform $transicion-rapida;
 
             &:hover {
@@ -39,6 +42,7 @@
     }
 
     // BOTONES LATERALES
+
     .carousel-control-prev,
     .carousel-control-next {
         transition:
@@ -59,24 +63,25 @@
     }
 }
 
-// ==============================
 // TABLET
-// ==============================
 
-@media (min-width: 768px) {
+@include tablet {
+
     .carousel-aimazing {
+
         .carousel-item {
             height: 400px;
         }
     }
 }
 
-// ==============================
-// DESKTOP
-// ==============================
 
-@media (min-width: 1024px) {
+// DESKTOP
+
+@include desktop {
+
     .carousel-aimazing {
+
         .carousel-item {
             height: 500px;
         }

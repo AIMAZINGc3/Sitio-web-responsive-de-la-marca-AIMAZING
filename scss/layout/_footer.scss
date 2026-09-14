@@ -1,12 +1,12 @@
 @use "../utilities/variables" as *;
 
+// FOOTER
 .footer {
     width: 100%;
+    padding: 25px 15px;
 
     background-color: $color-negro;
     color: $color-blanco;
-
-    padding: 25px 15px;
 
     text-align: center;
 

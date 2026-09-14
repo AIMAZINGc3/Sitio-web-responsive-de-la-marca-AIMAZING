@@ -1,15 +1,26 @@
 @use "variables" as *;
 
-@mixin flex-center {
+
+// FLEXBOX
+@mixin flex-layout(
+    $direction: row,
+    $justify: center,
+    $align: center,
+    $gap: 0
+) {
     display: flex;
-    align-items: center;
-    justify-content: center;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
+    gap: $gap;
 }
 
+// TRANSICIONES
 @mixin transition-base {
     transition: $transicion-rapida;
 }
 
+// RESPONSIVE
 @mixin tablet {
     @media (min-width: $breakpoint-tablet) {
         @content;

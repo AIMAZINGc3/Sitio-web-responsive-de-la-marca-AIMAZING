@@ -1,362 +1,227 @@
 @use "../utilities/variables" as *;
-
 @use "../utilities/mixins" as *;
 
-// ==============================
 
 // PRODUCTOS DE LA COLECCIÓN
 
-// ==============================
-
 .product {
-
     width: 100%;
-
     max-width: 320px;
     margin: 0 auto;
 
-
     background-color: $color-blanco;
-
     overflow: hidden;
 
     transition:
-
         transform $transicion-rapida,
-
         box-shadow $transicion-rapida;
+
     a {
-
         display: block;
-
     }
 
     .product-image {
-
         width: 100%;
-
         aspect-ratio: 3 / 4;
-
         overflow: hidden;
-
         background-color: $color-blanco;
 
         img {
-
             width: 100%;
-
             height: 100%;
-
             display: block;
-
             object-fit: contain;
-
             object-position: center;
-
             transition: transform $transicion-imagen;
-
         }
-
     }
 
     h3 {
-
         padding: 15px;
 
         font-family: $fuente-titulos;
-
         font-size: 15px;
-
         font-weight: 400;
-
         letter-spacing: 2px;
-
         text-align: center;
-
     }
 
     &:hover {
-
         .product-image {
-
             img {
-
                 transform: scale(1.03);
-
             }
-
         }
-
     }
-
 }
-
-// ==============================
 
 // PRODUCTOS BOOTSTRAP
 
-// ==============================
-
 .bootstrap-products {
-
     width: 100%;
 
     display: grid;
-
     grid-template-columns: 1fr;
-
     gap: $espaciado-md;
-
 }
-
-// ==============================
 
 // CARD
 
-// ==============================
-
 .product-card {
-
     width: 100%;
-
     max-width: 320px;
     margin: 0 auto;
 
-
     background-color: $color-blanco;
-
     overflow: hidden;
 
     transition:
-
         transform $transicion-rapida,
-
         box-shadow $transicion-rapida;
 
     // IMAGEN
 
     .card-img-top {
-
         width: 100%;
-
-        height: 200;
-
+        height: 200px;
         object-fit: cover;
-
         object-position: center;
-
         border-radius: 0;
-
         transition: transform $transicion-imagen;
-
     }
 
     // CUERPO
 
     .card-body {
-
         padding: 18px;
-
     }
 
     // TÍTULO
 
     .card-title {
-
         margin: 0;
 
         font-family: $fuente-titulos;
-
         font-size: 1.1rem;
-
         font-weight: 400;
-
         letter-spacing: 1px;
-
     }
 
     // DESCRIPCIÓN
 
     .card-text {
-
         margin-top: 8px;
-
         margin-bottom: $espaciado-sm;
 
         font-size: 0.85rem;
-
         color: $color-gris;
-
     }
 
     // PRECIO
 
     .product-price {
-
         margin: 0 0 15px;
 
         font-size: 0.95rem;
-
         font-weight: 600;
-
     }
 
     // BOTÓN
 
     .product-btn {
-
         width: 100%;
-
         display: block;
-
         padding: 11px 15px;
 
         background-color: $color-negro;
-
         color: $color-blanco;
 
         border: 1px solid $color-negro;
-
         border-radius: 0;
 
         font-size: 0.8rem;
-
         font-weight: 600;
 
         transition:
-
             background-color $transicion-rapida,
-
             color $transicion-rapida,
-
             transform $transicion-rapida,
-
             border-color $transicion-rapida;
 
         &:hover {
-
             background-color: $color-blanco;
-
             color: $color-negro;
-
             border-color: $color-negro;
-
             transform: translateY(-2px);
-
         }
 
         &:focus {
-
             background-color: $color-negro;
-
             color: $color-blanco;
-
             outline: 2px solid $color-texto;
-
             outline-offset: 4px;
-
         }
 
         &:active {
-
             background-color: $color-texto;
-
             color: $color-blanco;
-
             transform: translateY(0);
-
         }
-
     }
 
     // HOVER CARD
 
     &:hover {
-
         transform: translateY(-5px);
-
         box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
 
         .card-img-top {
-
             transform: scale(1.03);
-
         }
-
     }
 
     // FOCUS
 
     &:focus-within {
-
         outline: 2px solid $color-texto;
-
         outline-offset: 4px;
-
     }
 
     // ACTIVE
 
     &:active {
-
         transform: translateY(-2px);
-
     }
-
 }
 
-// ==============================
-
 // TABLET
-
-// ==============================
 
 @include tablet {
 
     .bootstrap-products {
-
         grid-template-columns: repeat(2, 1fr);
-
         gap: $espaciado-md;
-
     }
 
     .product-card {
-
         .card-img-top {
-
             height: 300px;
-
         }
-
     }
-
 }
 
-// ==============================
-
 // DESKTOP
-
-// ==============================
 
 @include desktop {
 
     .bootstrap-products {
-
         grid-template-columns: repeat(2, 1fr);
-
         gap: 25px;
-
     }
 
     .product-card {
-
         .card-img-top {
-
             height: 350px;
-
         }
-
     }
-
 }

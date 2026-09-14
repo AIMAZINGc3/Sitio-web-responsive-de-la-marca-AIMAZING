@@ -1,14 +1,19 @@
+// UTILIDADES
 @use "utilities/variables";
 @use "utilities/mixins";
 
+// BASE
 @use "base/tipografia";
 @use "base/base";
 
+// LAYOUT
 @use "layout/header";
 @use "layout/nav";
 @use "layout/footer";
 
+// COMPONENTES
 @use "components/buttons";
 @use "components/cards";
 @use "components/carousel";
 @use "components/sections";
+@use "components/animations";
