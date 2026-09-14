@@ -68,3 +68,4 @@ URL del sitio: https://aimazingc3.github.io/Sitio-web-responsive-de-la-marca-AIM
 
 GitHub: https://github.com/AIMAZINGc3/Sitio-web-responsive-de-la-marca-AIMAZING
 
+URL Del sitio subido a vercel : https://aimazing.vercel.app/
