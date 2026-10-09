@@ -2,8 +2,7 @@
 
 // FOOTER
 .footer {
-    margin-top: auto;
-    
+
     width: 100%;
     padding: 25px 15px;
 
@@ -20,3 +19,18 @@
     }
 }
 
+html,
+body {
+    min-height: 100%;
+    margin: 0;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
+}
