@@ -223,6 +223,20 @@ img {
   margin: 0;
 }
 
+.footer-sobre-nosotros {
+  width: 100%;
+  background-color: #050505;
+  color: #ffffff;
+  padding: 25px 15px;
+  text-align: center;
+  font-size: 10px;
+  letter-spacing: 1px;
+
+  position: fixed;
+  bottom: 0;
+  left: 0;
+}
+
 .hero-buttons .btn {
   width: 100%;
   display: block;
